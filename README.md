@@ -1,5 +1,6 @@
 #Trabalho de Comunicaçao
 ## Vlans
+```
 vlan 10
 name Alunos
 end
@@ -30,3 +31,4 @@ end
 vlan 100
 name  ParkingLot
 end
+```
