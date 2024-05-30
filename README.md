@@ -1,4 +1,5 @@
 # Trabalho de Comunicaçao
+ 192.168.250.0/23
 ## Vlans
 ```
 vlan 10
