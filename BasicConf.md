@@ -1,7 +1,7 @@
 # E1
 
 ## B1
-
+### Router
 ```
 en
 conf t
@@ -13,7 +13,7 @@ exit
 clock set 11:18:00 apr 24 2024
 copy running-config startup-config  
 ```
-
+### Switch
 ```
 en
 conf t
