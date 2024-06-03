@@ -43,6 +43,7 @@ name Native
 end
 ```
 Total:
+
 ```
 Impressoras: 14
 CCTVs: 13
