@@ -238,3 +238,69 @@ exit
 clock set 11:18:00 apr 24 2024
 copy running-config startup-config  
 ```
+# Data Center 
+## Serviços 
+### Router
+```
+conf t
+hostname RT-3
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
+### Switch
+```
+conf t
+hostname DC-S1
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
+## ISP 
+### Router
+```
+conf t
+hostname RT-WAW
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
+```
+conf t
+hostname RT-ISP
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
+```
+conf t
+hostname RT-Cloud
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
+```
+conf t
+hostname RT-WW
+no ip domain-lookup
+service password-encryption
+banner motd #Unauthorized access is prohibited#
+exit
+clock set 11:18:00 apr 24 2024
+copy running-config startup-config  
+```
