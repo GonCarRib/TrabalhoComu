@@ -18,27 +18,24 @@ vlan 50
 name SerAcademicos
 end
 vlan 60
-name SistemasAux
-end
-vlan 70
 name GestRede
 end
-vlan 80
+vlan 70
 name Telefone
 end
-vlan 90
+vlan 80
 name Convidados
 end
-Vlan 100 
+Vlan 90 
 name CCTV
 end
-Vlan 110
+Vlan 100
 name Printer
 end
-Vlan 120
+Vlan 110
 name TV
 end
-Vlan 130
+Vlan 120
 name AVAC
 end
 Vlan 947
