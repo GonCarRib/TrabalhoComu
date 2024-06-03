@@ -24,12 +24,21 @@ vlan 70
 name GestRede
 end
 vlan 80
-name Voice
+name Telefone
 end
 vlan 90
 name Convidados
 end
-vlan 100
-name  ParkingLot
+Vlan 100 
+name CCTV
+end
+Vlan 110
+name Printer
+end
+Vlan 120
+name TV
+end
+Vlan 130
+name AVAC
 end
 ```
