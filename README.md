@@ -56,5 +56,5 @@ Alunos: 230
 Gestão: 7
 Acadêmicos: 10
 Informática: 4
-``` ​
+```
 ​
