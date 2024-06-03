@@ -242,6 +242,7 @@ copy running-config startup-config
 ## Serviços 
 ### Router
 ```
+en
 conf t
 hostname RT-3
 no ip domain-lookup
@@ -253,6 +254,7 @@ copy running-config startup-config
 ```
 ### Switch
 ```
+en
 conf t
 hostname DC-S1
 no ip domain-lookup
@@ -265,6 +267,7 @@ copy running-config startup-config
 ## ISP 
 ### Router
 ```
+en
 conf t
 hostname RT-WAW
 no ip domain-lookup
@@ -275,6 +278,7 @@ clock set 11:18:00 apr 24 2024
 copy running-config startup-config  
 ```
 ```
+en
 conf t
 hostname RT-ISP
 no ip domain-lookup
@@ -285,6 +289,7 @@ clock set 11:18:00 apr 24 2024
 copy running-config startup-config  
 ```
 ```
+en
 conf t
 hostname RT-Cloud
 no ip domain-lookup
@@ -295,6 +300,7 @@ clock set 11:18:00 apr 24 2024
 copy running-config startup-config  
 ```
 ```
+en
 conf t
 hostname RT-WW
 no ip domain-lookup
