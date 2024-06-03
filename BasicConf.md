@@ -206,7 +206,7 @@ copy running-config startup-config
 ```
 en
 conf t
-hostname E2-B2-S
+hostname E2-B2-S5
 no ip domain-lookup
 service password-encryption
 banner motd #Unauthorized access is prohibited#
