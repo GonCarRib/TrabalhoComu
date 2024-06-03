@@ -43,6 +43,7 @@ name Native
 end
 ```
 Total:
+```
 Impressoras: 14
 CCTVs: 13
 TV: 6
@@ -53,5 +54,6 @@ Professor: 11
 Alunos: 230
 Gestão: 7
 Acadêmicos: 10
-Informática: 4 ​
+Informática: 4
+``` ​
 ​
