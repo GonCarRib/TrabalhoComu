@@ -4,43 +4,43 @@
 ```
 vlan 10
 name Alunos
-end
+exit
 vlan 20
 name Profs
-end
+exit
 vlan 30
 name ConcDeGestao
-end
+exit
 vlan 40
 name Informatica
-end
+exit
 vlan 50
 name ServAcademicos
-end
+exit
 vlan 60
 name GestaoRede
-end
+exit
 vlan 70
 name Telefone
-end
+exit
 vlan 80
 name Convidados
-end
+exit
 Vlan 90 
 name CCTV
-end
+exit
 Vlan 100
 name Printer
-end
+exit
 Vlan 110
 name TV
-end
+exit
 Vlan 120
 name AVAC
-end
+exit
 Vlan 947
 name Native
-end
+exit
 ```
 Total:
 
