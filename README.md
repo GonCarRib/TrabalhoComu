@@ -9,16 +9,16 @@ vlan 20
 name Profs
 end
 vlan 30
-name ConcGestao
+name ConcDeGestao
 end
 vlan 40
 name Informatica
 end
 vlan 50
-name SerAcademicos
+name ServAcademicos
 end
 vlan 60
-name GestRede
+name GestaoRede
 end
 vlan 70
 name Telefone
