@@ -2,6 +2,8 @@
  192.168.250.0/23
 ## Vlans
 ```
+en
+conf t
 vlan 10
 name Alunos
 exit
