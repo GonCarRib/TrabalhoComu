@@ -41,8 +41,11 @@ exit
 Vlan 120
 name AVAC
 exit
+Vlan 947
+name Native
+exit
 ```
-Nota: Vlan 70 telefone = Native
+
 
 Total:
 
