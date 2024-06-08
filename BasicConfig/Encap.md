@@ -1,3 +1,4 @@
+```
 int g0/0.10
 description Alunos
 encapsulation dot1q 10
@@ -32,3 +33,5 @@ int g0/0.80
 description Convidados
 encapsulation dot1q 80
 ip address 192.168.251.194 255.255.255.240
+
+```
