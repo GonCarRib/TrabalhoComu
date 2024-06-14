@@ -30,9 +30,8 @@ Edifício 1 (E1)
         Sub-rede: 192.168.1.48/28 (16 endereços, 14 utilizáveis, 192.168.1.49 a 192.168.1.62)
 
 Edifício 2 (E2)
-
-    IMPRESSORAS:
-        Necessidade: 15 IPs
+    TVs:
+        Necessidade: 7 IPs
         Sub-rede: 192.168.2.0/28 (16 endereços, 14 utilizáveis, 192.168.2.1 a 192.168.2.14)
 
     CCTVs:
@@ -71,9 +70,9 @@ Edifício 2 (E2)
         Necessidade: 7 IPs
         Sub-rede: 192.168.3.56/29 (8 endereços, 6 utilizáveis, 192.168.3.57 a 192.168.3.62)
 
-    TVs:
-        Necessidade: 7 IPs
-        Sub-rede: 192.168.3.64/28 (16 endereços, 14 utilizáveis, 192.168.3.65 a 192.168.3.78)
+    IMPRESSORAS:
+        Necessidade: 15 IPs
+        Sub-rede: 192.168.3.64/27 (32 endereços, 30 utilizáveis, 192.168.3.65 a 192.168.3.95)
 
 Resumo das Sub-redes
 E1
