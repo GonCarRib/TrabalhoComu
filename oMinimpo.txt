@@ -1,0 +1,3 @@
+o switch do data center nao precisa de helper so R1 e R2 (Helper = a ip server dhcp)
+separar os ALUNOS(Resto Tambem) em redes diferentes de por edridifio
+ip route precisa de ter o ip de cada ALUNO(Resto Tambem)
