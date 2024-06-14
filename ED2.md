@@ -51,7 +51,12 @@ Vamos somar as quantidades de cada tipo de equipamento:
 - CCTVs: 8
 - AVAC: 6
 - Telefones: 29
-- PCs: 130
+- ALUNOS 100
+- PROFESSORES 1+5+2 = 8
+- PC gestao 7
+- PC ACADEMICO 10
+- PC Informatica 4
+- PC Convidado
 - TVs: 5
 ```
 
