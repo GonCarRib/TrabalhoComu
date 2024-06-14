@@ -115,13 +115,13 @@ PC Acadêmico
 13	     /28
 
 PC Informática
-6	       /29
+6	       /28
 
 PC Convidado
 7	       /29
 
 TVs
-7	       /29
+7	       /28
 ```
 
 
