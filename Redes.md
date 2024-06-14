@@ -68,34 +68,11 @@ Edifício 2 (E2)
 
     AVAC:
         Necessidade: 8 IPs
-        Sub-rede: 192.168.3.56/29 (8 endereços, 6 utilizáveis, 192.168.3.57 a 192.168.3.62)
+        Sub-rede: 192.168.3.56/28 (16 endereços, 14 utilizáveis, 192.168.3.57 a 192.168.3.70)
 
     IMPRESSORAS:
         Necessidade: 15 IPs
-        Sub-rede: 192.168.3.64/27 (32 endereços, 30 utilizáveis, 192.168.3.65 a 192.168.3.95)
+        Sub-rede: 192.168.3.72/27 (32 endereços, 30 utilizáveis, 192.168.3.73 a 192.168.3.102)
 
-Resumo das Sub-redes
-E1
 
-    192.168.0.0/24 - ALUNOS
-    192.168.1.0/29 - PROFESSORES
-    192.168.1.8/29 - TELEFONES
-    192.168.1.16/29 - IMPRESSORAS
-    192.168.1.24/28 - CCTV
-    192.168.1.40/29 - AVAC
-    192.168.1.48/28 - CONVIDADOS
-
-E2
-
-    192.168.2.0/28 - TVs
-    192.168.2.16/28 - CCTVs
-    192.168.2.32/29 - AVAC
-    192.168.2.40/26 - TELEFONES
-    192.168.2.128/25 - ALUNOS
-    192.168.3.0/28 - PROFESSORES
-    192.168.3.16/28 - PC GESTÃO
-    192.168.3.32/28 - PC ACADÊMICO
-    192.168.3.48/29 - PC INFORMÁTICA
-    192.168.3.56/29 - PC CONVIDADO
-    192.168.3.64/27 - IMPRESSORAS
 ```
