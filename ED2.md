@@ -86,8 +86,8 @@ CONVIDADOS
 5   /28
 ```
 
-```
 ## E2
+```
 
 Dispositivo	Total (com folga)	
 Impressoras
