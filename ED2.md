@@ -90,17 +90,38 @@ CONVIDADOS
 ## E2
 
 Dispositivo	Total (com folga)	
-Impressoras	15	     /28
-CCTVs	11	           /28
-AVAC	8	             /29
-Telefones	38	       /27
-Alunos	100	         /25
-Professores	11	     /28
-PC Gestão	10	       /28
-PC Acadêmico 13	     /28
-PC Informática	6	   /29
-PC Convidado	7	     /29
-TVs	7	               /29
+Impressoras
+15        /28
+
+CCTVs
+11	           /28
+
+AVAC
+8	             /29
+
+Telefones
+38	       /27
+
+Alunos
+100	         /25
+
+Professores
+11	     /28
+
+PC Gestão
+10	       /28
+
+PC Acadêmico
+13	     /28
+
+PC Informática
+6	   /29
+
+PC Convidado
+7	     /29
+
+TVs
+7	               /29
 ```
 
 
