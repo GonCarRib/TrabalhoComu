@@ -63,7 +63,7 @@ Vamos somar as quantidades de cada tipo de equipamento:
 
 
 ## ED 1
-
+```
 ALUNOS
 50 + 40 + 40 = 130 /24
 
@@ -84,7 +84,9 @@ AVAC
 
 CONVIDADOS
 5   /28
+```
 
+```
 ## E2
 
 Dispositivo	Total (com folga)	
@@ -99,6 +101,7 @@ PC Acadêmico	13	/28
 PC Informática	6	/29
 PC Convidado	7	/29
 TVs	7	/29
+```
 
 
 
