@@ -1,0 +1,79 @@
+```
+Distribuição de sub-redes revisada
+Edifício 1 (E1)
+
+    ALUNOS:
+        Necessidade: 130 IPs
+        Sub-rede: 192.168.0.0/24 (256 endereços, 254 utilizáveis)
+
+    PROFESSORES:
+        Necessidade: 3 IPs
+        Sub-rede: 192.168.1.0/29 (8 endereços, 6 utilizáveis, 192.168.1.1 a 192.168.1.6)
+
+    TELEFONES:
+        Necessidade: 4 IPs
+        Sub-rede: 192.168.1.8/29 (8 endereços, 6 utilizáveis, 192.168.1.9 a 192.168.1.14)
+
+    IMPRESSORAS:
+        Necessidade: 3 IPs
+        Sub-rede: 192.168.1.16/29 (8 endereços, 6 utilizáveis, 192.168.1.17 a 192.168.1.22)
+
+    CCTV:
+        Necessidade: 5 IPs
+        Sub-rede: 192.168.1.24/28 (16 endereços, 14 utilizáveis, 192.168.1.25 a 192.168.1.38)
+
+    AVAC:
+        Necessidade: 3 IPs
+        Sub-rede: 192.168.1.40/29 (8 endereços, 6 utilizáveis, 192.168.1.41 a 192.168.1.46)
+
+    CONVIDADOS:
+        Necessidade: 5 IPs
+        Sub-rede: 192.168.1.48/28 (16 endereços, 14 utilizáveis, 192.168.1.49 a 192.168.1.62)
+
+Edifício 2 (E2)
+
+    IMPRESSORAS:
+        Necessidade: 15 IPs
+        Sub-rede: 192.168.2.0/28 (16 endereços, 14 utilizáveis, 192.168.2.1 a 192.168.2.14)
+
+    CCTVs:
+        Necessidade: 11 IPs
+        Sub-rede: 192.168.2.16/28 (16 endereços, 14 utilizáveis, 192.168.2.17 a 192.168.2.30)
+
+    AVAC:
+        Necessidade: 8 IPs
+        Sub-rede: 192.168.2.32/29 (8 endereços, 6 utilizáveis, 192.168.2.33 a 192.168.2.38)
+
+    TELEFONES:
+        Necessidade: 38 IPs
+        Sub-rede: 192.168.2.40/27 (32 endereços, 30 utilizáveis, 192.168.2.41 a 192.168.2.70)
+        Sub-rede adicional: 192.168.2.72/28 (16 endereços, 14 utilizáveis, 192.168.2.73 a 192.168.2.86)
+
+    ALUNOS:
+        Necessidade: 100 IPs
+        Sub-rede: 192.168.2.88/25 (128 endereços, 126 utilizáveis, 192.168.2.89 a 192.168.2.214)
+
+    PROFESSORES:
+        Necessidade: 11 IPs
+        Sub-rede: 192.168.2.216/28 (16 endereços, 14 utilizáveis, 192.168.2.217 a 192.168.2.230)
+
+    PC GESTÃO:
+        Necessidade: 10 IPs
+        Sub-rede: 192.168.2.232/28 (16 endereços, 14 utilizáveis, 192.168.2.233 a 192.168.2.246)
+
+    PC ACADÊMICO:
+        Necessidade: 13 IPs
+        Sub-rede: 192.168.2.248/28 (16 endereços, 14 utilizáveis, 192.168.2.249 a 192.168.2.262)
+
+    PC INFORMÁTICA:
+        Necessidade: 6 IPs
+        Sub-rede: 192.168.3.0/28 (16 endereços, 14 utilizáveis, 192.168.3.1 a 192.168.3.14)
+
+    PC CONVIDADO:
+        Necessidade: 7 IPs
+        Sub-rede: 192.168.3.16/29 (8 endereços, 6 utilizáveis, 192.168.3.17 a 192.168.3.22)
+
+    TVs:
+        Necessidade: 7 IPs
+        Sub-rede: 192.168.3.24/28 (16 endereços, 14 utilizáveis, 192.168.3.25 a 192.168.3.38)
+```
