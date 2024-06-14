@@ -94,34 +94,34 @@ Impressoras
 15        /28
 
 CCTVs
-11	           /28
+11	      /28
 
 AVAC
-8	             /29
+8	        /29
 
 Telefones
-38	       /27
+38	      /27
 
 Alunos
-100	         /25
+100	      /25
 
 Professores
-11	     /28
+11	      /28
 
 PC Gestão
-10	       /28
+10	      /28
 
 PC Acadêmico
 13	     /28
 
 PC Informática
-6	   /29
+6	       /29
 
 PC Convidado
-7	     /29
+7	       /29
 
 TVs
-7	               /29
+7	       /29
 ```
 
 
