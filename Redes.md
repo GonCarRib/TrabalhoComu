@@ -67,7 +67,7 @@ Edifício 2 (E2)
         Sub-rede: 192.168.3.48/29 (8 endereços, 6 utilizáveis, 192.168.3.49 a 192.168.3.54)
 
     PC CONVIDADO:
-        Necessidade: 7 IPs
+        Necessidade: 3 IPs
         Sub-rede: 192.168.3.56/29 (8 endereços, 6 utilizáveis, 192.168.3.57 a 192.168.3.62)
 
     IMPRESSORAS:
