@@ -54,3 +54,30 @@ Vamos somar as quantidades de cada tipo de equipamento:
 - PCs: 130
 - TVs: 5
 ```
+
+
+
+## ED 1
+
+ALUNOS
+50 + 40 + 40 = 130
+
+PROFESSORES
+1+1+1 = 3
+
+TELEFONE
+1+1+1+1 = 4
+
+IMPRESSORA
+3
+
+CCTV
+5
+
+AVAC
+3
+
+CONVIDADOS
+5
+
+
