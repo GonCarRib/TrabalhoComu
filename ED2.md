@@ -65,24 +65,25 @@ Vamos somar as quantidades de cada tipo de equipamento:
 ## ED 1
 
 ALUNOS
-50 + 40 + 40 = 130
+50 + 40 + 40 = 130 /24
 
 PROFESSORES
-1+1+1 = 3
+1+1+1 = 3   /29
 
 TELEFONE
-1+1+1+1 = 4
+1+1+1+1 = 4  /29
 
 IMPRESSORA
-3
+3    /29
 
 CCTV
-5
+5  /28
 
 AVAC
-3
+3   /29
 
 CONVIDADOS
-5
+5   /28
+
 
 
