@@ -67,7 +67,7 @@ ip address  192.168.3.105 255.255.255.248
 int g0/0.130
 description ServInternos
 encapsulation dot1q 130
-ip address 192.168.2.129 255.255.255.128
+ip address 192.168.1.130 255.255.255.240
 
 ```
 
