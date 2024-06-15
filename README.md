@@ -42,6 +42,8 @@ exit
 Vlan 120
 name AVAC
 exit
+Vlan 130
+name ServInte
 Vlan 947
 name Native
 exit
