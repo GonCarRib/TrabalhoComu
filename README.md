@@ -1,96 +1,51 @@
 # Trabalho de Comunicaçao
- 192.168.250.0/23
+ 192.168.0.0/22
 ## Vlans
 E1
 ```
 
 en
 conf t
-vlan 11
+vlan 10
 name Alunos
 exit
-vlan 21
+vlan 20
 name Profs
 exit
-vlan 31
+vlan 30
 name ConcDeGestao
 exit
-vlan 41
+vlan 40
 name Informatica
 exit
-vlan 51
+vlan 50
 name ServAcademicos
 exit
-vlan 61
+vlan 60
 name GestaoRede
 exit
-vlan 71
+vlan 70
 name Telefone
 exit
-vlan 81
+vlan 80
 name Convidados
 exit
-Vlan 91
+Vlan 90
 name CCTV
 exit
-Vlan 101
+Vlan 100
 name Printer
 exit
-Vlan 111
+Vlan 110
 name TV
 exit
-Vlan 121
+Vlan 120
 name AVAC
 exit
 Vlan 947
 name Native
 exit
-```
 
-E2
-```
-
-en
-conf t
-vlan 12
-name Alunos
-exit
-vlan 22
-name Profs
-exit
-vlan 32
-name ConcDeGestao
-exit
-vlan 42
-name Informatica
-exit
-vlan 52
-name ServAcademicos
-exit
-vlan 62
-name GestaoRede
-exit
-vlan 72
-name Telefone
-exit
-vlan 82
-name Convidados
-exit
-Vlan 92
-name CCTV
-exit
-Vlan 102
-name Printer
-exit
-Vlan 112
-name TV
-exit
-Vlan 122
-name AVAC
-exit
-Vlan 947
-name Native
-exit
 ```
 
 
