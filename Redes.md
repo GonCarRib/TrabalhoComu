@@ -77,3 +77,16 @@ Edifício 2 (E2)
 
 
 ```
+
+```
+DataCenter (DC)
+    ServInternos
+      Necessidade: 7 IPs
+      Sub-rede: 192.168.1.129/28 (16 endereços, 14 utilizáveis, 192.168.1.130 a 192.168.1.145)
+
+```
+
+
+
+
+
