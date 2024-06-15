@@ -38,10 +38,6 @@ Edifício 2 (E2)
         Necessidade: 11 IPs
         Sub-rede: 192.168.2.16/28 (16 endereços, 14 utilizáveis, 192.168.2.17 a 192.168.2.30)
 
-    PC CONVIDADO:
-        Necessidade: 3 IPs
-        Sub-rede: 192.168.2.32/29 (8 endereços, 6 utilizáveis, 192.168.2.33 a 192.168.2.38)
-
     TELEFONES:
         Necessidade: 38 IPs
         Sub-rede: 192.168.2.40/26 (64 endereços, 62 utilizáveis, 192.168.2.41 a 192.168.2.102)
@@ -73,6 +69,11 @@ Edifício 2 (E2)
     IMPRESSORAS:
         Necessidade: 15 IPs
         Sub-rede: 192.168.3.72/27 (32 endereços, 30 utilizáveis, 192.168.3.73 a 192.168.3.102)
+
+    PC CONVIDADO:
+        Necessidade: 3 IPs
+        Sub-rede: 192.168.3.104/29 (8 endereços, 6 utilizáveis, 192.168.3.105 a 192.168.3.110)
+
 
 
 ```
