@@ -1,4 +1,5 @@
 ```
+
 int g0/0.11
 description AlunosE1
 encapsulation dot1q 11
@@ -44,7 +45,6 @@ description TelefoneE2
 encapsulation dot1q 72
 ip address 192.168.2.41 255.255.255.192
 
-
 int g0/0.81
 description ConvidadosE1
 encapsulation dot1q 81
@@ -54,4 +54,5 @@ int g0/0.82
 description ConvidadosE2
 encapsulation dot1q 82
 ip address 192.168.2.33 255.255.255.248
+
 ```
