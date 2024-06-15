@@ -53,6 +53,6 @@ ip address 192.168.1.49 255.255.255.240
 int g0/0.82
 description ConvidadosE2
 encapsulation dot1q 82
-ip address 192.168.2.33 255.255.255.248
+ip address  192.168.3.105 255.255.255.248
 
 ```
