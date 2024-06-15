@@ -62,7 +62,7 @@ ip address  192.168.3.105 255.255.255.248
 
 ```
 
-## E2
+## RC
 ```
 int g0/0.130
 description ServInternos
