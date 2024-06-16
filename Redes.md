@@ -27,7 +27,7 @@ Edifício 1 (E1)
 
     CONVIDADOS:
         Necessidade: 5 IPs
-        Sub-rede: 192.168.1.40/28 (16 endereços, 14 utilizáveis, 192.168.1.41 a 192.168.1.54)
+        Sub-rede: 192.168.1.48/28 (16 endereços, 14 utilizáveis, 192.168.1.49 a 192.168.1.62)
 
 Edifício 2 (E2)
     TVs:
