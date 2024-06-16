@@ -19,15 +19,15 @@ Edifício 1 (E1)
 
     CCTV:
         Necessidade: 5 IPs
-        Sub-rede: 192.168.1.24/28 (16 endereços, 14 utilizáveis, 192.168.1.25 a 192.168.1.38)
+        Sub-rede: 192.168.1.24/29 (8 endereços, 6 utilizáveis, 192.168.1.25 a 192.168.1.30)
 
     AVAC:
         Necessidade: 3 IPs
-        Sub-rede: 192.168.1.40/29 (8 endereços, 6 utilizáveis, 192.168.1.41 a 192.168.1.46)
+        Sub-rede: 192.168.1.32/29 (8 endereços, 6 utilizáveis, 192.168.1.33 a 192.168.1.38)
 
     CONVIDADOS:
         Necessidade: 5 IPs
-        Sub-rede: 192.168.1.48/28 (16 endereços, 14 utilizáveis, 192.168.1.49 a 192.168.1.62)
+        Sub-rede: 192.168.1.40/28 (16 endereços, 14 utilizáveis, 192.168.1.41 a 192.168.1.54)
 
 Edifício 2 (E2)
     TVs:
