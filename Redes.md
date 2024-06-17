@@ -40,7 +40,7 @@ Edifício 2 (E2)
 
     TELEFONES: vlan 70
         Necessidade: 38 IPs
-        Sub-rede: 192.168.2.40/26 (64 endereços, 62 utilizáveis, 192.168.2.41 a 192.168.2.102)
+        Sub-rede: 192.168.2.64/26 (64 endereços, 62 utilizáveis, 192.168.2.65 - 192.168.2.126)
 
     ALUNOS: vlan 10
         Necessidade: 100 IPs
