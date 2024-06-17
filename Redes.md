@@ -68,7 +68,7 @@ Edifício 2 (E2)
 
     IMPRESSORAS:
         Necessidade: 15 IPs
-        Sub-rede: 192.168.3.72/27 (32 endereços, 30 utilizáveis, 192.168.3.73 a 192.168.3.102)
+        Sub-rede: 192.168.3.64/27 (32 endereços, 30 utilizáveis, 	192.168.3.65 - 192.168.3.94)
 
     PC CONVIDADO:
         Necessidade: 3 IPs
