@@ -64,7 +64,7 @@ Edifício 2 (E2)
 
     AVAC:
         Necessidade: 8 IPs
-        Sub-rede: 192.168.3.56/28 (16 endereços, 14 utilizáveis, 192.168.3.57 a 192.168.3.70)
+        Sub-rede: 192.168.3.112/28 (16 endereços, 14 utilizáveis, 192.168.3.113 - 192.168.3.126)
 
     IMPRESSORAS:
         Necessidade: 15 IPs
