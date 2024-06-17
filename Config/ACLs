@@ -1,13 +1,13 @@
-
-access-list 101 permit ip 192.168.0.0 255.255.255.0 192.168.2.128 255.255.255.128
-access-list 101 permit icmp 192.168.0.0 255.255.255.0 192.168.2.128 255.255.255.128
-access-list 101 permit tcp 192.168.0.0 255.255.255.0 host 192.168.1.133 eq 80
-access-list 101 permit tcp 192.168.0.0 255.255.255.0 host 192.168.1.133 eq 443
-access-list 101 permit udp 192.168.0.0 255.255.255.0 host 192.168.1.131 eq bootps
-access-list 101 permit udp 192.168.0.0 255.255.255.0 host 192.168.1.131 eq bootpc
-access-list 101 permit udp 192.168.0.0 255.255.255.0 host 192.168.1.132 eq 53
-access-list 101 deny ip 192.168.0.0 255.255.255.0 192.168.0.0 255.255.0.0
-access-list 101 permit ip 192.168.0.0 255.255.255.0 any
+ip access-list extended 101
+permit ip 192.168.0.0 0.0.0.255 192.168.2.128 0.0.0.127
+permit icmp 192.168.0.0 0.0.0.255 192.168.2.128 0.0.0.127
+permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 80
+permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 443
+permit udp 192.168.0.0 0.0.0.255 host 192.168.1.131 eq bootps
+permit udp 192.168.0.0 0.0.0.255 host 192.168.1.131 eq bootpc
+permit udp 192.168.0.0 0.0.0.255 host 192.168.1.132 eq 53
+deny ip 192.168.0.0 0.0.0.255 192.168.0.0 0.0.255.255
+permit ip 192.168.0.0 0.0.0.255 any
 
 
 int g0/1.10
