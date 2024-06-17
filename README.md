@@ -67,4 +67,18 @@ Gestão: 7
 Acadêmicos: 10
 Informática: 4
 ```
-​
+```
+access-list 101 permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 80
+access-list 101permit tcp 192.168.2.128 0.0.0.127 host 192.168.1.133 eq 80
+access-list 101 permit tcp 192.168.1.0 0.0.0.7 host 192.168.1.133 eq 80
+access-list 101 permit tcp 192.168.3.0 0.0.0.15 host 192.168.1.133 eq 80
+access-list 101 permit tcp 192.168.3.16 0.0.0.15 host 192.168.1.133 eq 80
+access-list 101 permit tcp 192.168.3.32 0.0.0.15 host 192.168.1.133 eq 80
+access-list 101 permit tcp 192.168.3.48 0.0.0.7 host 192.168.1.133 eq 80
+access-list 101 deny   tcp any host 192.168.1.133 eq 80
+access-list 101 deny ip any any
+
+
+int g0/1
+ip access-group 101 out
+​```
