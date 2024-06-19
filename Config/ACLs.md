@@ -94,6 +94,24 @@ ip access-group R2AclG01_50Out Out
 
 ------------------------------------------------------------
 
+!RT-2 G0/1.70 out
+ip access-list extended R2AclG01_70Out
+
+!Informatica do Ed2 -> Telefone do Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.2.64 0.0.0.63
+permit icmp 192.168.3.48 0.0.0.7 192.168.2.64 0.0.0.63
+
+
+!Telefone do Ed1 -> Telefone do Ed2
+permit ip 192.168.1.8 0.0.0.7 192.168.2.64 0.0.0.63
+permit icmp 192.168.1.8 0.0.0.7 192.168.2.64 0.0.0.63
+
+
+
+int g0/1.70
+ip access-group R2AclG01_70Out Out
+
+------------------------------------------------------------
 
 
 
