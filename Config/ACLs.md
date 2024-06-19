@@ -81,6 +81,19 @@ ip access-group R2AclG01_30Out Out
 
 ------------------------------------------------------------
 
+!RT-2 G0/1.50 out
+ip access-list extended R2AclG01_50Out
+
+!Informatica do Ed2 -> Academico Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.3.32 0.0.0.15
+permit icmp 192.168.3.48 0.0.0.7 192.168.3.32 0.0.0.15
+
+
+int g0/1.50
+ip access-group R2AclG01_50Out Out
+
+------------------------------------------------------------
+
 
 
 
