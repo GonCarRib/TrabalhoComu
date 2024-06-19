@@ -1,3 +1,4 @@
+!Router DC
 ip access-list extended AclOut
 !Alunos do Ed1 -> Ed2 
 permit ip 192.168.0.0 0.0.0.255 192.168.2.128 0.0.0.127
