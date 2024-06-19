@@ -1,0 +1,184 @@
+Edificio 2
+- PCs para alunos: 100 (24+24+24+24+4)
+- PCs para professores: 8
+- PCs para convidados: 1
+- PCs (conselho de gestão): 7
+- PCs (serviços académicos): 10
+- PCs (informática): 4
+- Impressoras: 5 (Geral do edifício) + 1 (Conselho de Gestão) + 3 (Departamento de Serviços Académicos) + 1 (Departamento de Informática) + 1 (Sala de Professores) = 11 Impressoras
+- CCTVs: 8
+- AVACs: 5 (Geral do edifício) + 1 (Auditório) = 6 AVACs
+- Telefones: 3 (Geral do edifício) + 1 (Auditório) + 7 (Conselho de Gestão) + 10 (Departamento de Serviços Académicos) + 4 (Departamento de Informática) + 3 (Sala de Professores) + 1 (Laboratório de Informática) = 29 Telefones
+- TVs: 1 (Conselho de Gestão) + 1 (Departamento de Informática) + 1 (Sala de Professores) + 2 (Laboratório de Informática) = 5 TVs
+
+E2-B1-S1
+FA 01-24 Alunos
+```
+enable
+conf t
+interface range fa0/1-24
+description Vlan Aluno
+switchport mode access 
+switchport access vlan 10
+```
+E2-B1-S3
+FA 01-24 Alunos
+```
+enable
+conf t
+interface range fa0/1-24
+description Vlan Aluno
+switchport mode access 
+switchport access vlan 10
+```
+E2-B2-S2
+FA 01-24 Alunos
+```
+enable
+conf t
+interface range fa0/1-24
+description Vlan Aluno
+switchport mode access 
+switchport access vlan 10
+```
+E2-B2-S5
+FA 01-24 Alunos
+```
+enable
+conf t
+interface range fa0/1-24
+description Vlan Aluno
+switchport mode access 
+switchport access vlan 10
+```
+E2-B1-S2
+FA 03-06 Alunos
+```
+enable
+conf t
+interface range fa0/3-6
+description Vlan Aluno
+switchport mode access 
+switchport access vlan 10
+```
+
+E2-B1-S2
+FA 07-14 Professores
+```
+enable
+conf t
+interface range fa0/7-14
+description Vlan Professor
+switchport mode access 
+switchport access vlan 20
+```
+
+E2-B1-S2
+FA 15 Convidado
+```
+enable
+conf t
+interface fa0/15
+description Vlan Convidado
+switchport mode access 
+switchport access vlan 80
+```
+
+E2-B1-S2
+FA 16-22 Conselho de gestão
+```
+enable
+conf t
+interface range fa0/16-22
+description Vlan Concelho de Gestao
+switchport mode access 
+switchport access vlan 30
+```
+
+E2-B2-S1
+FA 02-11 serviços académicos
+```
+enable
+conf t
+interface range fa0/2-11
+description Vlan Servicos Academicos
+switchport mode access 
+switchport access vlan 50
+```
+
+E2-B2-S1
+FA 12-15 Informatica
+```
+enable
+conf t
+interface range fa0/12-15
+description Vlan Informatica
+switchport mode access 
+switchport access vlan 40
+```
+
+E2-B2-S3
+FA 02-12 Impressora
+```
+enable
+conf t
+interface range fa0/2-12
+description Vlan Impressora
+switchport mode access 
+switchport access vlan 100
+```
+
+E2-B2-S1
+FA 12-15 CCTV
+```
+enable
+conf t
+interface range fa0/16-23
+description Vlan CCTV
+switchport mode access 
+switchport access vlan 90
+```
+
+E2-B2-S3
+FA 13-18 AVAC
+```
+enable
+conf t
+interface range fa0/13-18
+description Vlan AVAC
+switchport mode access 
+switchport access vlan 100
+```
+
+E2-B1-S4
+FA 02-24 Telefones
+```
+enable
+conf t
+interface range fa0/2-24
+description Vlan Telefone
+switchport mode access 
+switchport access vlan 70
+```
+
+E2-B2-S3
+FA 19-24 Telefones
+```
+enable
+conf t
+interface range fa0/19-24
+description Vlan Telefone
+switchport mode access 
+switchport access vlan 70
+```
+
+E2-B2-S4
+FA 01-24 TV
+```
+enable
+conf t
+interface range fa0/1-5
+description Vlan TV
+switchport mode access 
+switchport access vlan 110
+```
