@@ -1,0 +1,93 @@
+EDIFICIO 1
+130 ALUNOS 24+24+24+24+22+12
+E1-B1-S1 
+FA 01 - 24 ALUNOS 
+E1-B1-S3 
+FA 01 - 24 ALUNOS
+E1-B1-S2 
+FA 03 - 24 ALUNOS
+E1-B2-S1 
+FA 02-13 ALUNOS
+E1-B2-S2 
+FA 01-24 ALUNOS
+E1-B2-S4 
+FA 01-24 ALUNOS
+
+3 professores
+E1-B2-S1
+FA 14-16 PROFESSORES
+
+4 telefones
+E1-B1-S4
+FA 02-05 TELEFONE
+```
+enable
+conf t
+interface range fa0/2-5
+description Vlan Telefone
+switchport mode access 
+switchport access vlan 70
+```
+
+5 convidados
+E1-B2-S1
+FA 17-21 CONVIDADOS
+
+```
+enable
+conf t
+interface range fa0/17-21
+description Vlan Convidado
+switchport mode access 
+switchport access vlan 80
+```
+
+3 avac
+E1-B2-S1
+FA 22-24 AVAC
+```
+enable
+conf t
+interface range fa0/22-24
+description Vlan AVAC
+switchport mode access 
+switchport access vlan 120
+```
+
+
+1 tv
+E1-B1-S4
+FA 06 TV
+```
+enable
+conf t
+interface fa0/6
+description Vlan TV
+switchport mode access 
+switchport access vlan 110
+```
+
+5 cctv
+E1-B1-S4
+FA 07-11 CCTV
+```
+enable
+conf t
+interface range fa0/7-11
+description Vlan cctv
+switchport mode access 
+switchport access vlan 90
+```
+
+3 impressoras
+E1-B1-S4
+FA 12-14 IMPRESSORA
+```
+enable
+conf t
+interface range fa0/12-14
+description Vlan Impressora
+switchport mode access 
+switchport access vlan 100
+```
+
