@@ -25,7 +25,7 @@ permit icmp 192.168.3.48 0.0.0.7 192.168.2.128 0.0.0.127
 permit ip 192.168.3.32 0.0.0.15 192.168.2.128 0.0.0.127
 permit icmp 192.168.3.32 0.0.0.15 192.168.2.128 0.0.0.127
 
-!Academico do ConcGestao -> Alunos Ed2
+!ConcGestao -> Alunos Ed2
 permit ip 192.168.3.16 0.0.0.15 192.168.2.128 0.0.0.127
 permit icmp 192.168.3.16 0.0.0.15 192.168.2.128 0.0.0.127
 
@@ -58,7 +58,7 @@ permit icmp 192.168.3.48 0.0.0.7 192.168.3.0 0.0.0.15
 permit ip 192.168.3.32 0.0.0.15 192.168.3.0 0.0.0.15
 permit icmp 192.168.3.32 0.0.0.15 192.168.3.0 0.0.0.15
 
-!Academico do ConcGestao Ed2 -> Professores Ed2
+!ConcGestao Ed2 -> Professores Ed2
 permit ip 192.168.3.16 0.0.0.15 192.168.3.0 0.0.0.15
 permit icmp 192.168.3.16 0.0.0.15 192.168.3.0 0.0.0.15
 
@@ -68,12 +68,29 @@ ip access-group R2AclG01_20Out Out
 
 ------------------------------------------------------------
 
+!RT-2 G0/1.30 out
+ip access-list extended R2AclG01_30out
+
+!Informatica do Ed2 -> CooncGestao Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.3.16 0.0.0.15
+permit icmp 192.168.3.48 0.0.0.7 192.168.3.16 0.0.0.15
+
+
+int g0/1.30
+ip access-group R2AclG01_30Out Out
+
+------------------------------------------------------------
+
+
+
+
 ```
 
 # RT-DC
 ```
-!Router DC g0/1.10 out
-ip access-list extended RDcAclG01Out
+!Router DC g0/1.130 out
+ip access-list extended RDcAclG01_130Out
+
 !Alunos do Ed1 -> ServerWeb 
 permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 80
 permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 443
@@ -97,5 +114,5 @@ deny icmp any any
 
 
 int g0/1.130
-ip access-group RDcAclG01Out out
+ip access-group RDcAclG01_130Out out
 ```
