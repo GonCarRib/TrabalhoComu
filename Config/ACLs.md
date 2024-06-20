@@ -1,4 +1,53 @@
 # RT-1
+```
+!RT-1 G0/1.10 out
+ip access-list extended R1AclG01_10Out
+
+!Alunos do Ed2 -> Alunos Ed1
+permit ip 192.168.2.128 0.0.0.127 192.168.0.0 0.0.0.255
+permit icmp 192.168.2.128 0.0.0.127 192.168.0.0 0.0.0.255
+
+!Professores do Ed1 -> ALunos Ed1
+permit ip 192.168.1.0 0.0.0.7 192.168.0.0 0.0.0.255
+permit icmp 192.168.1.0 0.0.0.7 192.168.0.0 0.0.0.255
+
+!Professores do Ed2 -> Alunos Ed1
+permit ip 192.168.3.0 0.0.0.15 192.168.0.0 0.0.0.255
+permit icmp 192.168.3.0 0.0.0.15 192.168.0.0 0.0.0.255
+
+!Informatica do Ed2 -> Alunos Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.0.0 0.0.0.255
+permit icmp 192.168.3.48 0.0.0.7 192.168.0.0 0.0.0.255
+
+
+int g0/1.10
+ip access-group R1AclG01_10Out out
+
+------------------------------------------------------------
+!RT-1 G0/1.20 out
+ip access-list extended R1AclG01_20Out
+
+!Alunos do Ed2 -> Professores do Ed1
+permit ip 192.168.2.128 0.0.0.127 192.168.1.0 0.0.0.7
+permit icmp 192.168.2.128 0.0.0.127 192.168.1.0 0.0.0.7
+
+!ALunos Ed1 -> Professores do Ed1
+permit ip 192.168.0.0 0.0.0.255 192.168.1.0 0.0.0.7
+permit icmp 192.168.0.0 0.0.0.255 192.168.1.0 0.0.0.7
+
+!Professores do Ed2 -> Professores do Ed1
+permit ip 192.168.3.0 0.0.0.15 192.168.1.0 0.0.0.7
+permit icmp 192.168.3.0 0.0.0.15 192.168.1.0 0.0.0.7
+
+!Informatica do Ed2 -> Professores do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.0 0.0.0.7
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.0 0.0.0.7
+
+
+int g0/1.20
+ip access-group R1AclG01_20Out out
+
+```
 
 # RT-2
 ```
