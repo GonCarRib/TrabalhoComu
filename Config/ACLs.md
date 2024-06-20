@@ -350,7 +350,6 @@ permit tcp 192.168.0.0 0.0.0.255 host 192.168.1.133 eq 443
 permit tcp 192.168.2.128 0.0.0.127 host 192.168.1.133 eq 80
 permit tcp 192.168.2.128 0.0.0.127 host 192.168.1.133 eq 443
 
-
 !Alunos do Ed1 -> DNS 
 permit udp 192.168.0.0 0.0.0.255 host 192.168.1.132 eq 53
 
