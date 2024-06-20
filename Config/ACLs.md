@@ -129,7 +129,7 @@ ip access-group R2AclG01_80Out Out
 !RT-2 G0/1.90 out
 ip access-list extended R2AclG01_90Out
 
-!Informatica do Ed2 -> Convidados do Ed2
+!Informatica do Ed2 -> CCTV do Ed2
 permit ip 192.168.3.48 0.0.0.7 192.168.2.17 0.0.0.15
 permit icmp 192.168.3.48 0.0.0.7 192.168.2.17 0.0.0.15
 
@@ -142,7 +142,7 @@ ip access-group R2AclG01_90Out Out
 !RT-2 G0/1.100 out
 ip access-list extended R2AclG01_100Out
 
-!Informatica do Ed2 -> Convidados do Ed2
+!Informatica do Ed2 -> Impressoras do Ed2
 permit ip 192.168.3.48 0.0.0.7 192.168.3.65 0.0.0.31
 permit icmp 192.168.3.48 0.0.0.7 192.168.3.65 0.0.0.31
 
@@ -151,6 +151,20 @@ int g0/1.100
 ip access-group R2AclG01_100Out Out
 
 ------------------------------------------------------------
+
+!RT-2 G0/1.110 out
+ip access-list extended R2AclG01_110Out
+
+!Informatica do Ed2 -> TV do Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.2.0 0.0.0.15
+permit icmp 192.168.3.48 0.0.0.7 192.168.2.0 0.0.0.15
+
+
+int g0/1.110
+ip access-group R2AclG01_110Out Out
+
+------------------------------------------------------------
+
 
 
 
