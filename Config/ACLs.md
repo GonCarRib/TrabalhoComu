@@ -165,7 +165,16 @@ ip access-group R2AclG01_110Out Out
 
 ------------------------------------------------------------
 
+!RT-2 G0/1.120 out
+ip access-list extended R2AclG01_120Out
 
+!Informatica do Ed2 -> AVAC do Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.3.112 0.0.0.15
+permit icmp 192.168.3.48 0.0.0.7 192.168.3.112 0.0.0.15
+
+
+int g0/1.120
+ip access-group R2AclG01_120Out Out
 
 
 
