@@ -1,6 +1,5 @@
-```
+ ```
 ### Total Geral
-Vamos somar as quantidades de cada tipo de equipamento:
 
 - **Impressoras**
   - Geral do edifício: 5
