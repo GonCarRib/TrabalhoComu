@@ -139,6 +139,18 @@ ip access-group R2AclG01_90Out Out
 
 ------------------------------------------------------------
 
+!RT-2 G0/1.100 out
+ip access-list extended R2AclG01_100Out
+
+!Informatica do Ed2 -> Convidados do Ed2
+permit ip 192.168.3.48 0.0.0.7 192.168.3.65 0.0.0.31
+permit icmp 192.168.3.48 0.0.0.7 192.168.3.65 0.0.0.31
+
+
+int g0/1.100
+ip access-group R2AclG01_100Out Out
+
+------------------------------------------------------------
 
 
 
