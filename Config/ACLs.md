@@ -24,6 +24,7 @@ int g0/1.10
 ip access-group R1AclG01_10Out out
 
 ------------------------------------------------------------
+
 !RT-1 G0/1.20 out
 ip access-list extended R1AclG01_20Out
 
@@ -46,6 +47,90 @@ permit icmp 192.168.3.48 0.0.0.7 192.168.1.0 0.0.0.7
 
 int g0/1.20
 ip access-group R1AclG01_20Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.70 out
+ip access-list extended R1AclG01_70Out
+
+!Informatica do Ed2 -> Telefone do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.8 0.0.0.7 
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.8 0.0.0.7 
+
+
+!Telefone do Ed2 -> Telefone do Ed1
+permit ip 192.168.2.64 0.0.0.63 192.168.1.8 0.0.0.7 
+permit icmp 192.168.2.64 0.0.0.63 192.168.1.8 0.0.0.7 
+
+
+int g0/1.70
+ip access-group R1AclG01_70Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.80 out
+ip access-list extended R1AclG01_80Out
+
+!Informatica do Ed2 -> Convidado do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.48 0.0.0.15
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.48 0.0.0.15 
+
+
+int g0/1.80
+ip access-group R1AclG01_80Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.90 out
+ip access-list extended R1AclG01_90Out
+
+!Informatica do Ed2 -> CCTV do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.24 0.0.0.7
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.24 0.0.0.7 
+
+
+int g0/1.90
+ip access-group R1AclG01_90Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.100 out
+ip access-list extended R1AclG01_100Out
+
+!Informatica do Ed2 -> Printer do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.16 0.0.0.7
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.16 0.0.0.7 
+
+
+int g0/1.100
+ip access-group R1AclG01_100Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.110 out
+ip access-list extended R1AclG01_110Out
+
+!Informatica do Ed2 -> Convidado do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.180 0.0.0.3
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.180 0.0.0.3
+
+
+int g0/1.110
+ip access-group R1AclG01_110Out out
+
+------------------------------------------------------------
+
+!RT-1 G0/1.120 out
+ip access-list extended R1AclG01_120Out
+
+!Informatica do Ed2 -> Convidado do Ed1
+permit ip 192.168.3.48 0.0.0.7 192.168.1.33 0.0.0.7 
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.33 0.0.0.7 
+
+
+int g0/1.120
+ip access-group R1AclG01_120Out out
+
 
 ```
 
