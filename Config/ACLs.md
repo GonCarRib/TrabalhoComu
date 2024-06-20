@@ -330,9 +330,6 @@ permit udp 192.168.0.0 0.0.3.255 host 192.168.1.131 eq bootpc
 !Alunos do Ed1 -> DNS 
 permit udp 192.168.0.0 0.0.0.255 host 192.168.1.132 eq 53
 
-!Alunos deny ligacao ha internet
-deny ip 192.168.0.0 0.0.0.255 192.168.0.0 0.0.255.255
-
 !Permitir alunos falarem com qualquer coisa
 permit ip 192.168.0.0 0.0.0.255 any
 
@@ -343,4 +340,16 @@ deny icmp any any
 
 int g0/1.130
 ip access-group RDcAclG01_130Out out
+
+------------------------------------------------------------
+
+!Router DC g0/0 out
+ip access-list extended RtDcAclG00Out
+
+!Alunos ligacao ha internet
+permit ip 192.168.0.0 0.0.0.255 192.168.0.0 0.0.255.255
+
+
+int g0/0
+ip access-group RtDcAclG00Out out
 ```
