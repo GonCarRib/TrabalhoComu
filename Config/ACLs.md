@@ -23,6 +23,11 @@ permit icmp 192.168.3.48 0.0.0.7 192.168.0.0 0.0.0.255
 permit tcp host 192.168.1.133 192.168.0.0 0.0.0.255 eq 80
 permit tcp host 192.168.1.133 192.168.0.0 0.0.0.255 eq 443
 
+!ServerInternos - > aluno Ed 1
+permit ip host 192.168.1.133 192.168.0.0 0.0.0.255
+permit icmp host 192.168.1.133 192.168.0.0 0.0.0.255
+
+
 
 int g0/1.10
 ip access-group R1AclG01_10Out out
@@ -170,6 +175,10 @@ permit icmp 192.168.3.16 0.0.0.15 192.168.2.128 0.0.0.127
 !ServerInternos - > aluno Ed 2
 permit tcp host 192.168.1.133 192.168.2.128 0.0.0.127 eq 80
 permit tcp host 192.168.1.133 192.168.2.128 0.0.0.127 eq 443
+
+!ServerInternos - > aluno Ed 2
+permit ip host 192.168.1.133 192.168.2.128 0.0.0.127
+permit icmp host 192.168.1.133 192.168.2.128 0.0.0.127
 
 
 
