@@ -27,9 +27,13 @@ permit tcp host 192.168.1.133 192.168.0.0 0.0.0.255 eq 443
 permit ip host 192.168.1.133 192.168.0.0 0.0.0.255
 permit icmp host 192.168.1.133 192.168.0.0 0.0.0.255
 
-!Interwebs - > Aluno Ed 1
-permit ip 200.5.10.0 0.0.0.255 192.168.0.0 0.0.0.255
-permit icmp 200.5.10.0 0.0.0.255 192.168.0.0 0.0.0.255
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.0.0 0.0.0.255
+deny icmp 192.168.0.0 0.0.3.255 192.168.0.0 0.0.0.255
+
+!Permit InterWebs
+permit ip any 192.168.0.0 0.0.0.255
+permit icmp any 192.168.0.0 0.0.0.255
 
 
 
