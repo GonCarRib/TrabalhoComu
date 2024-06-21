@@ -90,7 +90,15 @@ ip access-list extended R1AclG01_80Out
 
 !Informatica do Ed2 -> Convidado do Ed1
 permit ip 192.168.3.48 0.0.0.7 192.168.1.48 0.0.0.15
-permit icmp 192.168.3.48 0.0.0.7 192.168.1.48 0.0.0.15 
+permit icmp 192.168.3.48 0.0.0.7 192.168.1.48 0.0.0.15
+
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.1.48 0.0.0.15
+deny icmp 192.168.0.0 0.0.3.255 192.168.1.48 0.0.0.15
+
+!Permit InterWebs
+permit ip any 192.168.1.48 0.0.0.15
+permit icmp any 192.168.1.48 0.0.0.15
 
 
 int g0/1.80
@@ -283,6 +291,14 @@ ip access-list extended R2AclG01_80Out
 !Informatica do Ed2 -> Convidados do Ed2
 permit ip 192.168.3.48 0.0.0.7 192.168.3.104 0.0.0.7
 permit icmp 192.168.3.48 0.0.0.7 192.168.2.104 0.0.0.7
+
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.3.104 0.0.0.7
+deny icmp 192.168.0.0 0.0.3.255 192.168.3.104 0.0.0.7
+
+!Permit InterWebs
+permit ip any 192.168.3.104 0.0.0.7
+permit icmp any 192.168.3.104 0.0.0.7
 
 
 int g0/1.80
