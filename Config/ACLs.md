@@ -61,6 +61,14 @@ permit icmp 192.168.3.0 0.0.0.15 192.168.1.0 0.0.0.7
 permit ip 192.168.3.48 0.0.0.7 192.168.1.0 0.0.0.7
 permit icmp 192.168.3.48 0.0.0.7 192.168.1.0 0.0.0.7
 
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.1.0 0.0.0.7
+deny icmp 192.168.0.0 0.0.3.255 192.168.1.0 0.0.0.7
+
+!Permit InterWebs
+permit ip any 192.168.1.0 0.0.0.7
+permit icmp any 192.168.1.0 0.0.0.7
+
 
 int g0/1.20
 ip access-group R1AclG01_20Out out
@@ -233,6 +241,14 @@ permit icmp 192.168.3.32 0.0.0.15 192.168.3.0 0.0.0.15
 !ConcGestao Ed2 -> Professores Ed2
 permit ip 192.168.3.16 0.0.0.15 192.168.3.0 0.0.0.15
 permit icmp 192.168.3.16 0.0.0.15 192.168.3.0 0.0.0.15
+
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.3.0 0.0.0.15
+deny icmp 192.168.0.0 0.0.3.255 192.168.3.0 0.0.0.15
+
+!Permit InterWebs
+permit ip any 192.168.3.0 0.0.0.15
+permit icmp any 192.168.3.0 0.0.0.15
 
 
 int g0/1.20
