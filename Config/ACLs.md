@@ -425,15 +425,3 @@ deny icmp any any
 int g0/1.130
 ip access-group RDcAclG01_130Out out
 
-------------------------------------------------------------
-
-!Router DC g0/0 out
-ip access-list extended RtDcAclG00Out
-
-!Alunos ligacao ha internet
-permit ip 192.168.0.0 0.0.0.255 192.168.0.0 0.0.255.255
-
-
-int g0/0
-ip access-group RtDcAclG00Out out
-```
