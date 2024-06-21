@@ -247,6 +247,13 @@ ip access-list extended R2AclG01_30out
 permit ip 192.168.3.48 0.0.0.7 192.168.3.16 0.0.0.15
 permit icmp 192.168.3.48 0.0.0.7 192.168.3.16 0.0.0.15
 
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.3.16 0.0.0.15
+deny icmp 192.168.0.0 0.0.3.255 192.168.3.16 0.0.0.15
+
+!Permit InterWebs
+permit ip any 192.168.3.16 0.0.0.15
+permit icmp any 192.168.3.16 0.0.0.15
 
 int g0/1.30
 ip access-group R2AclG01_30Out Out
@@ -260,6 +267,13 @@ ip access-list extended R2AclG01_50Out
 permit ip 192.168.3.48 0.0.0.7 192.168.3.32 0.0.0.15
 permit icmp 192.168.3.48 0.0.0.7 192.168.3.32 0.0.0.15
 
+!Deny a todos dentro da rede
+deny ip 192.168.0.0 0.0.3.255 192.168.3.32 0.0.0.15
+deny icmp 192.168.0.0 0.0.3.255192.168.3.32 0.0.0.15
+
+!Permit InterWebs
+permit ip any 192.168.3.32 0.0.0.15
+permit icmp any 192.168.3.32 0.0.0.15
 
 int g0/1.50
 ip access-group R2AclG01_50Out Out
